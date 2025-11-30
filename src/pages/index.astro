@@ -2,15 +2,407 @@
 
 ---
 
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Aloja Doce - Postres Caseros</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700&display=swap" rel="stylesheet" />
+		<style>
+			@font-face {
+				font-family: 'Swung Note';
+				src: url('/fonts/Swung Note/Web Fonts/df686314c9322f41b41b537d3c58b15b.woff2') format('woff2'),
+					 url('/fonts/Swung Note/Web Fonts/df686314c9322f41b41b537d3c58b15b.woff') format('woff');
+				font-weight: normal;
+				font-style: normal;
+				font-display: swap;
+			}
+		</style>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<div class="flyer">
+			<!-- Header con Logo -->
+			<header class="header">
+				<img src="/logosinfondo.png" alt="Aloja Doce Logo" class="logo-image" />
+			</header>
+
+			<!-- Main Content -->
+			<main class="menu">
+			<!-- Waffles -->
+			<section class="category category-alt-1">
+				<div class="category-block">
+						<h2 class="category-title">WAFFLES</h2>
+						<div class="items">
+							<div class="item">
+								<h3>Waffle Clásico</h3>
+								<p class="price">$13</p>
+								<p class="description">Waffle casero recién hecho con sirope de maple</p>
+							</div>
+							<div class="item">
+								<h3>Waffle de Chocolate</h3>
+								<p class="price">$15</p>
+								<p class="description">Waffle de chocolate con cobertura de chocolate derretido</p>
+							</div>
+						<div class="item">
+							<h3>Waffle de Fresas</h3>
+							<p class="price">$16</p>
+							<p class="description">Waffle con fresas frescas y crema batida</p>
+						</div>
+					</div>
+				</div>
+				<img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=400&h=350&fit=crop" alt="Waffles" class="category-image" />
+			</section>
+
+			<!-- Cupcakes -->
+			<section class="category category-alt-2">
+				<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=350&fit=crop" alt="Cupcakes" class="category-image" />
+				<div class="category-block">
+						<h2 class="category-title">CUPCAKES</h2>
+						<div class="items">
+							<div class="item">
+								<h3>Cupcake de Vainilla</h3>
+								<p class="price">$5</p>
+								<p class="description">Esponjoso cupcake de vainilla con buttercream</p>
+							</div>
+							<div class="item">
+								<h3>Cupcake de Chocolate</h3>
+								<p class="price">$6</p>
+								<p class="description">Intenso chocolate con frosting de chocolate oscuro</p>
+							</div>
+							<div class="item">
+							<h3>Cupcake Red Velvet</h3>
+							<p class="price">$7</p>
+							<p class="description">Clásico red velvet con cream cheese frosting</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Pancakes -->
+			<section class="category category-alt-1">
+				<div class="category-block">
+						<h2 class="category-title">PANCAKES</h2>
+						<div class="items">
+							<div class="item">
+								<h3>Pancakes Clásicos</h3>
+								<p class="price">$12</p>
+								<p class="description">Stack de 3 pancakes con mantequilla y sirope</p>
+							</div>
+							<div class="item">
+								<h3>Pancakes de Blueberries</h3>
+								<p class="price">$14</p>
+								<p class="description">Pancakes con arándanos frescos</p>
+							</div>
+							<div class="item">
+								<h3>Pancakes con Nutella</h3>
+								<p class="price">$15</p>
+								<p class="description">Pancakes rellenos de Nutella y frutos secos</p>
+							</div>
+					</div>
+				</div>
+				<img src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=400&h=350&fit=crop" alt="Pancakes" class="category-image" />
+			</section>
+
+			<!-- Cakes -->
+			<section class="category category-alt-2">
+				<img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=400&h=350&fit=crop" alt="Cakes" class="category-image" />
+				<div class="category-block">
+						<h2 class="category-title">CAKES</h2>
+						<div class="items">
+							<div class="item">
+								<h3>Torta de Chocolate</h3>
+								<p class="price">$35</p>
+								<p class="description">Torta de chocolate de 6 porciones</p>
+							</div>
+							<div class="item">
+								<h3>Torta Carrot Cake</h3>
+								<p class="price">$38</p>
+								<p class="description">Carrot cake con frosting de cream cheese</p>
+							</div>
+							<div class="item">
+							<h3>Torta de Fresas</h3>
+							<p class="price">$40</p>
+							<p class="description">Torta de biscochuelo con fresas y crema</p>
+						</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Milkshakes -->
+			<section class="category category-alt-1">
+				<div class="category-block">
+						<h2 class="category-title">MILKSHAKES</h2>
+						<div class="items">
+							<div class="item">
+								<h3>Milkshake de Fresa</h3>
+								<p class="price">$8</p>
+								<p class="description">Milkshake cremoso de fresa fresca</p>
+							</div>
+							<div class="item">
+								<h3>Milkshake de Chocolate</h3>
+								<p class="price">$8</p>
+								<p class="description">Delicioso milkshake de chocolate oscuro</p>
+							</div>
+							<div class="item">
+								<h3>Milkshake de Vainilla</h3>
+								<p class="price">$8</p>
+								<p class="description">Clásico milkshake de vainilla cremosa</p>
+							</div>
+					</div>
+				</div>
+				<img src="https://images.unsplash.com/photo-1553530666-ba2a8e36cd44?w=400&h=350&fit=crop" alt="Milkshakes" class="category-image" />
+			</section>
+
+				<!-- Desserts -->
+				<section class="category category-alt-2">
+					<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=350&fit=crop" alt="Desserts" class="category-image" />
+					<div class="category-block">
+						<h2 class="category-title">DESSERTS</h2>
+						<div class="items">
+							<div class="item">
+								<h3>Brownie</h3>
+								<p class="price">$6</p>
+								<p class="description">Brownie de chocolate casero y esponjoso</p>
+							</div>
+							<div class="item">
+								<h3>Cheesecake</h3>
+								<p class="price">$9</p>
+								<p class="description">Clásico cheesecake con base de galleta</p>
+							</div>
+							<div class="item">
+								<h3>Tiramisú</h3>
+								<p class="price">$10</p>
+								<p class="description">Tiramisú italiano tradicional y delicioso</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<!-- Footer -->
+			<footer class="footer">
+				<h3>CONTACTO</h3>
+				<p class="contact-phone">📞 (43) 555-8978</p>
+				<p class="contact-phone">📞 (47) 555-3472</p>
+				<p class="delivery">Delivery disponible</p>
+			</footer>
+		</div>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: 'Bricolage Grotesque', sans-serif;
+				background-image: url('/freepik__adjust__79978.png');
+				background-size: contain;
+				background-repeat: repeat;
+				background-attachment: fixed;
+				padding: 20px;
+				background-color: #F5F1ED;
+			}
+
+			.flyer {
+				max-width: 1000px;
+				margin: 0 auto;
+				background: white;
+				padding: 50px 40px;
+				border-radius: 4px;
+				box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+			}
+
+			/* Header */
+			.header {
+				text-align: center;
+				margin-bottom: 50px;
+				padding-bottom: 40px;
+				border-bottom: 3px solid #A0826D;
+			}
+
+			.logo-image {
+				max-width: 280px;
+				width: 100%;
+				height: auto;
+				object-fit: contain;
+			}
+
+			/* Menu */
+			.menu {
+				display: flex;
+				flex-direction: column;
+				gap: 0;
+				margin-bottom: 40px;
+			}
+
+			.category {
+				display: flex;
+				align-items: stretch;
+				gap: 0;
+				margin-bottom: 0;
+				min-height: 350px;
+			}
+
+			.category-alt-1 {
+				flex-direction: row;
+			}
+
+			.category-alt-2 {
+				flex-direction: row;
+				background-color: #F9F6F3;
+			}
+
+			.category-image {
+				width: 45%;
+				object-fit: cover;
+				flex-shrink: 0;
+			}
+
+			.category-block {
+				width: 55%;
+				padding: 40px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				background-color: white;
+			}
+
+			.category-alt-2 .category-block {
+				background-color: #D7A99B;
+				color: white;
+			}
+
+			.category-alt-2 .category-title {
+				color: white;
+				border-bottom-color: rgba(255, 255, 255, 0.3);
+			}
+
+			.category-alt-2 .item h3 {
+				color: white;
+			}
+
+			.category-alt-2 .price {
+				color: #F5F1ED;
+			}
+
+			.category-alt-2 .description {
+				color: rgba(255, 255, 255, 0.9);
+			}
+
+			.category-title {
+				font-family: 'Swung Note', cursive;
+				font-size: 42px;
+				font-weight: 400;
+				color: #5D4037;
+				margin-bottom: 25px;
+				letter-spacing: 0;
+				text-transform: none;
+				border-bottom: 3px solid #D7A99B;
+				padding-bottom: 15px;
+			}
+
+			.items {
+				display: flex;
+				flex-direction: column;
+				gap: 25px;
+			}
+
+			.item {
+				padding-bottom: 0;
+			}
+
+			.item h3 {
+				font-family: 'Bricolage Grotesque', sans-serif;
+				font-size: 17px;
+				font-weight: 700;
+				color: #5D4037;
+				margin-bottom: 4px;
+			}
+
+			.price {
+				font-family: 'Bricolage Grotesque', sans-serif;
+				font-size: 19px;
+				font-weight: 700;
+				color: #A0826D;
+				margin-bottom: 6px;
+			}
+
+			.description {
+				font-size: 14px;
+				color: #7A6B66;
+				line-height: 1.5;
+				font-style: normal;
+				font-family: 'Bricolage Grotesque', sans-serif;
+			}
+
+			/* Footer */
+			.footer {
+				text-align: center;
+				padding-top: 40px;
+				border-top: 3px solid #A0826D;
+				margin-top: 50px;
+			}
+
+			.footer h3 {
+				font-family: 'Swung Note', cursive;
+				font-size: 32px;
+				font-weight: 400;
+				color: #5D4037;
+				margin-bottom: 15px;
+				letter-spacing: 0;
+			}
+
+			.contact-phone {
+				font-size: 15px;
+				color: #5D4037;
+				margin-bottom: 8px;
+				font-weight: 600;
+				font-family: 'Bricolage Grotesque', sans-serif;
+			}
+
+			.delivery {
+				font-size: 14px;
+				color: #A0826D;
+				margin-top: 10px;
+				font-style: normal;
+				font-family: 'Bricolage Grotesque', sans-serif;
+			}
+
+			/* Responsive */
+			@media (max-width: 768px) {
+				.category {
+					flex-direction: column !important;
+					min-height: auto;
+				}
+
+				.category-image {
+					width: 100%;
+					height: 250px;
+				}
+
+				.category-block {
+					width: 100%;
+					padding: 30px 20px;
+				}
+
+				.flyer {
+					padding: 30px 20px;
+				}
+
+				.logo-image {
+					max-width: 220px;
+				}
+
+				.category-title {
+					font-size: 24px;
+				}
+			}
+		</style>
 	</body>
 </html>

@@ -18,8 +18,11 @@ COPY . .
 # Construir la aplicación
 RUN pnpm run build
 
+# Instalar serve globalmente
+RUN npm install -g serve
+
 # Exponer el puerto 4321
 EXPOSE 4321
 
-# Comando para servir la aplicación
-CMD ["pnpm", "run", "preview", "--host", "0.0.0.0"]
+# Servir los archivos estáticos desde dist/
+CMD ["serve", "dist", "-l", "4321"]
